@@ -1,28 +1,109 @@
-$gradiant-style-one: 
-    45deg, 
-    #070230,
-    #0e035e,
-    #250668;
+
 
 body {
-    background-image: linear-gradient($gradiant-style-one);
-    background-size: 300%;
-    animation: bg-animation 7s infinite;
+    background-color: black;
 }
 
-@keyframes bg-animation {
-    0% {background-position: left}
-    50% {background-position: right}
-    100% {background-position: left}
-}
 
 .title {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: conic-gradient(
+        hsl(256, 93%, 21%),
+        hsl(278, 100%, 50%)
+    ) fixed;
+    background: radial-gradient(
+        hsl(256, 91%, 35%),
+        hsl(278, 100%, 50%),
+        hsl(256, 91%, 35%),
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .title-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1000%;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: conic-gradient(
+        hsl(256, 93%, 21%),
+        hsl(278, 100%, 50%)
+    ) fixed;
+    background: radial-gradient(
+        hsl(256, 91%, 35%),
+        hsl(278, 100%, 50%),
+        hsl(256, 91%, 35%),
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1000%;
+}
+
+.projects {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: conic-gradient(
+        hsl(256, 93%, 21%),
+        hsl(278, 100%, 50%)
+    ) fixed;
+    background: radial-gradient(
+        hsl(256, 91%, 35%),
+        hsl(278, 100%, 50%),
+        hsl(256, 91%, 35%),
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.project-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1000%;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background: conic-gradient(
+        hsl(256, 93%, 21%),
+        hsl(278, 100%, 50%)
+    ) fixed;
+    background: radial-gradient(
+        hsl(256, 91%, 35%),
+        hsl(278, 100%, 50%),
+        hsl(256, 91%, 35%),
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact-text {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 1000%;

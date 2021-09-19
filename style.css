@@ -1,32 +1,5 @@
 body {
-  background-image: linear-gradient(45deg, #070230, #0e035e, #250668);
-  background-size: 300%;
-  -webkit-animation: bg-animation 7s infinite;
-          animation: bg-animation 7s infinite;
-}
-
-@-webkit-keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
-}
-
-@keyframes bg-animation {
-  0% {
-    background-position: left;
-  }
-  50% {
-    background-position: right;
-  }
-  100% {
-    background-position: left;
-  }
+  background-color: black;
 }
 
 .title {
@@ -39,9 +12,91 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title-text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1000%;
+}
+
+.about-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1000%;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-text {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1000%;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 100vh;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-text {
   color: white;
   font-family: 'Montserrat', sans-serif;
   font-size: 1000%;
