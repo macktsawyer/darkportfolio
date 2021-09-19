@@ -21,10 +21,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.title-text {
+.title-title {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1000%;
+  font-size: 900%;
 }
 
 .about-me {
@@ -37,6 +37,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   height: 100vh;
   background: conic-gradient(#1e0467, #a200ff) fixed;
@@ -46,10 +50,15 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.about-text {
+.about-title {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1000%;
+  font-size: 900%;
+}
+
+.about-para {
+  width: 70%;
+  font-size: 200%;
 }
 
 .projects {
@@ -62,6 +71,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   height: 100vh;
   background: conic-gradient(#1e0467, #a200ff) fixed;
@@ -71,10 +84,19 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.project-text {
+.project-title {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1000%;
+  font-size: 900%;
+}
+
+.projectOne {
+  font-size: 200%;
+  height: 500px;
+  width: 500px;
+  border-bottom: #4402f7 5px solid;
+  border-right: #170349 5px solid;
+  border-radius: 5px;
 }
 
 .contact {
@@ -96,9 +118,9 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.contact-text {
+.contact-title {
   color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1000%;
+  font-size: 900%;
 }
 /*# sourceMappingURL=style.css.map */
