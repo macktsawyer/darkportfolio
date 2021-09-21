@@ -1,4 +1,7 @@
-
+$borderRadius: 5px;
+$orangeColor: hsl(34, 100%, 50%);
+$buttonWidth: 100px;
+$buttonHeight: 25px;
 
 body {
     background-color: black;
@@ -70,6 +73,13 @@ body {
     flex-direction: column;
     text-align: center;
     height: 100vh;
+
+}
+
+.project-title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 900%;
     background: conic-gradient(
         hsl(256, 93%, 21%),
         hsl(278, 100%, 50%)
@@ -77,26 +87,49 @@ body {
     background: radial-gradient(
         hsl(256, 91%, 35%),
         hsl(278, 100%, 50%),
-        hsl(256, 91%, 35%),
+        hsl(256, 91%, 35%)
     ) fixed;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.project-title {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 900%;
+.projectWrap {
+    padding: 2px;
+    position: relative;
+    border-radius: $borderRadius;
+    background: linear-gradient(to right,        
+    hsl(256, 91%, 35%),
+    hsl(278, 100%, 50%),
+    hsl(256, 91%, 35%));
 }
 
 .projectOne {
     font-size: 200%;
-    height: 500px;
-    width: 500px;
-    border-bottom: hsl(256, 98%, 49%) 5px solid;
-    border-right: hsl(257, 92%, 15%) 5px solid;
-    border-radius: 5px;
+    color: $orangeColor;
+    height: 25rem;
+    width: 25rem;
+    border-radius: $borderRadius;
+    background: rgb(0, 0, 0);
+    padding: 2px;
+}
+
+.githubButton {
+    color: hsl(256, 96%, 18%);
+    background: $orangeColor;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    border: 1px;
+    border-radius: 7px;
+}
+
+.projectButton {
+    color: hsl(256, 96%, 18%);
+    background: $orangeColor;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    border: 1px;
+    border-radius: 7px;
 }
 
 .contact {

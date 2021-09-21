@@ -77,6 +77,12 @@ body {
           flex-direction: column;
   text-align: center;
   height: 100vh;
+}
+
+.project-title {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 900%;
   background: conic-gradient(#1e0467, #a200ff) fixed;
   background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
   background-clip: text;
@@ -84,19 +90,40 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.project-title {
-  color: white;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 900%;
+.projectWrap {
+  padding: 2px;
+  position: relative;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#3308aa), color-stop(#a200ff), to(#3308aa));
+  background: linear-gradient(to right, #3308aa, #a200ff, #3308aa);
 }
 
 .projectOne {
   font-size: 200%;
-  height: 500px;
-  width: 500px;
-  border-bottom: #4402f7 5px solid;
-  border-right: #170349 5px solid;
+  color: #ff9100;
+  height: 25rem;
+  width: 25rem;
   border-radius: 5px;
+  background: black;
+  padding: 2px;
+}
+
+.githubButton {
+  color: #19025a;
+  background: #ff9100;
+  height: 25px;
+  width: 100px;
+  border: 1px;
+  border-radius: 7px;
+}
+
+.projectButton {
+  color: #19025a;
+  background: #ff9100;
+  height: 25px;
+  width: 100px;
+  border: 1px;
+  border-radius: 7px;
 }
 
 .contact {
