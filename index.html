@@ -12,7 +12,14 @@
 </head>
 <body>
     <section class="title">
-        <h1 class="title-title">Welcome</h1>
+        <container class="title-container">
+            <div>
+                <h1 class="title-title">Welcome.</h1>
+            </div>
+            <div>
+                <h2 class="title-subtitle">Mack Sawyer - Web Developer, Programmer, Professional</h2>
+            </div>
+        </container>
     </section>
     <section class="about-me">
         <div>
@@ -25,17 +32,21 @@
     </section>
     <section class="projects">
         <h1 class="project-title">Projects</h1>
-        <div class="projectWrap">
-            <div class="projectOne">
-                <div>
-                    <h1 class="projectOneTitle">MentorShip</h1>
-                </div>
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla justo diam, non dignissim erat sollicitudin molestie.</p>
-                </div>
-                <div>
-                    <button class="githubButton">Github</button>
-                    <button class="projectButton">View Project</button>
+        <div class="slide-in from-left">
+            <div class="projectWrap">
+                <div class="projectOne">
+                    <Container class="projectContainer">
+                        <div>
+                            <h1 class="projectHeader">MentorShip</h1>
+                        </div>
+                        <div>
+                            <p class="projectAbout">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla justo diam, non dignissim erat sollicitudin molestie. </p>
+                        </div>
+                        <div class="projectButtons">
+                            <button class="githubButton">Github</button>
+                            <button class="visitButton">View Project</button>
+                        </div>
+                    </Container>
                 </div>
             </div>
         </div>
@@ -44,4 +55,5 @@
         <h1 class="contact-title">Contact Me</h1>
     </section>
 </body>
+<script src="index.js"></script>
 </html>

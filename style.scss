@@ -1,12 +1,16 @@
 $borderRadius: 5px;
 $orangeColor: hsl(34, 100%, 50%);
+$brightOrangeColor: hsl(14, 100%, 50%);
 $buttonWidth: 100px;
 $buttonHeight: 25px;
+
+html {
+    overflow-x: hidden;
+}
 
 body {
     background-color: black;
 }
-
 
 .title {
     display: flex;
@@ -28,10 +32,28 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.title-container {
+    width: 80vw;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px 0px;
+}
+
 .title-title {
+    display: flex;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 900%;
+    align-self: flex-start;
+    margin: 0px;
+}
+
+.title-subtitle {
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    color: white;
+    align-self: center;
 }
 
 .about-me {
@@ -40,15 +62,15 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     background: conic-gradient(
-        hsl(256, 93%, 21%),
-        hsl(278, 100%, 50%)
+        $orangeColor,
+        $brightOrangeColor
     ) fixed;
     background: radial-gradient(
-        hsl(256, 91%, 35%),
-        hsl(278, 100%, 50%),
-        hsl(256, 91%, 35%),
+        hsl(59, 100%, 48%),
+        hsl(14, 100%, 50%),
+        hsl(59, 100%, 48%)
     ) fixed;
     background-clip: text;
     -webkit-background-clip: text;
@@ -58,12 +80,12 @@ body {
 .about-title {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 900%;
+    font-size: 600%;
 }
 
 .about-para {
     width: 70%;
-    font-size: 200%;
+    font-size: 150%;
 }
 
 .projects {
@@ -72,14 +94,20 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
+}
 
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column;
+    height: 100%;
 }
 
 .project-title {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 900%;
+    font-size: 600%;
     background: conic-gradient(
         hsl(256, 93%, 21%),
         hsl(278, 100%, 50%)
@@ -94,6 +122,10 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.projectAbout {
+    font-size: 70%;
+}
+
 .projectWrap {
     padding: 2px;
     position: relative;
@@ -104,6 +136,24 @@ body {
     hsl(256, 91%, 35%));
 }
 
+.slide-in {
+    transform: translate(-100%);
+    transition: transform 800ms ease-in;
+    opacity: 0;
+}
+
+.slide-in.appear {
+    transform: translate(0);
+    opacity: 1;
+}
+
+.projectButtons {
+   display: flex;
+   align-self: center;
+   margin: 50px;
+   padding: 2px;
+}
+
 .projectOne {
     font-size: 200%;
     color: $orangeColor;
@@ -111,25 +161,58 @@ body {
     width: 25rem;
     border-radius: $borderRadius;
     background: rgb(0, 0, 0);
-    padding: 2px;
 }
 
 .githubButton {
     color: hsl(256, 96%, 18%);
+    cursor: pointer;
     background: $orangeColor;
     height: $buttonHeight;
     width: $buttonWidth;
     border: 1px;
+    margin-right: 3px;
     border-radius: 7px;
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em $orangeColor, 
+    0 0 0.5em $orangeColor, 
+    0 0 0.1em $orangeColor, 
+    0 10px 3px #000;
+    &:hover {
+        background: $brightOrangeColor;
+        box-shadow: 0 -40px 100px, 
+        0 0 3px, 
+        0 0 2em $brightOrangeColor, 
+        0 0 0.5em $brightOrangeColor, 
+        0 0 0.1em $brightOrangeColor, 
+        0 10px 3px #000;
+    }
 }
 
-.projectButton {
+.visitButton {
     color: hsl(256, 96%, 18%);
+    cursor: pointer;
     background: $orangeColor;
     height: $buttonHeight;
     width: $buttonWidth;
     border: 1px;
+    margin-left: 3px;
     border-radius: 7px;
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em $orangeColor, 
+    0 0 0.5em $orangeColor, 
+    0 0 0.1em $orangeColor, 
+    0 10px 3px #000;
+    &:hover {
+        background: $brightOrangeColor;
+        box-shadow: 0 -40px 100px, 
+        0 0 3px, 
+        0 0 2em $brightOrangeColor, 
+        0 0 0.5em $brightOrangeColor, 
+        0 0 0.1em $brightOrangeColor, 
+        0 10px 3px #000;
+    }
 }
 
 .contact {
@@ -137,7 +220,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
+    height: 80vh;
     background: conic-gradient(
         hsl(256, 93%, 21%),
         hsl(278, 100%, 50%)
@@ -155,5 +238,5 @@ body {
 .contact-title {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 900%;
+    font-size: 500%;
 }
