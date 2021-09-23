@@ -54,15 +54,16 @@ body {
     display: flex;
     color: white;
     align-self: center;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .about-me {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
+    height: 120vh;
     background: conic-gradient(
         $orangeColor,
         $brightOrangeColor
@@ -95,6 +96,7 @@ body {
     flex-direction: column;
     text-align: center;
     height: 80vh;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .projectContainer {
@@ -122,8 +124,12 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
+.projectHeader {
+    font-size: 85%;
+}
+
 .projectAbout {
-    font-size: 70%;
+    font-size: 50%;
 }
 
 .projectWrap {
@@ -136,13 +142,22 @@ body {
     hsl(256, 91%, 35%));
 }
 
-.slide-in {
+.from-left {
     transform: translate(-100%);
     transition: transform 800ms ease-in;
     opacity: 0;
+    margin: 5px;
 }
 
-.slide-in.appear {
+.from-right {
+    transform: translate(100%);
+    transition: transform 800ms ease-in;
+    opacity: 0;
+    margin: 5px;
+}
+
+.from-left.appear,
+.from-right.appear {
     transform: translate(0);
     opacity: 1;
 }
@@ -215,12 +230,30 @@ body {
     }
 }
 
+.projectTwo {
+    font-size: 200%;
+    color: $orangeColor;
+    height: 25rem;
+    width: 25rem;
+    border-radius: $borderRadius;
+    background: rgb(0, 0, 0);
+}
+
+.projectThree {
+    font-size: 200%;
+    color: $orangeColor;
+    height: 25rem;
+    width: 25rem;
+    border-radius: $borderRadius;
+    background: rgb(0, 0, 0);
+}
+
 .contact {
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
     background: conic-gradient(
         hsl(256, 93%, 21%),
         hsl(278, 100%, 50%)

@@ -60,6 +60,7 @@ body {
   color: white;
   -ms-flex-item-align: center;
       align-self: center;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .about-me {
@@ -69,15 +70,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  height: 80vh;
+  height: 120vh;
   background: conic-gradient(#ff9100, #ff3c00) fixed;
   background: radial-gradient(#f5f100, #ff3c00, #f5f100) fixed;
   background-clip: text;
@@ -112,6 +113,7 @@ body {
           flex-direction: column;
   text-align: center;
   height: 80vh;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .projectContainer {
@@ -138,8 +140,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.projectHeader {
+  font-size: 85%;
+}
+
 .projectAbout {
-  font-size: 70%;
+  font-size: 50%;
 }
 
 .projectWrap {
@@ -150,7 +156,7 @@ body {
   background: linear-gradient(to right, #3308aa, #a200ff, #3308aa);
 }
 
-.slide-in {
+.from-left {
   -webkit-transform: translate(-100%);
           transform: translate(-100%);
   -webkit-transition: -webkit-transform 800ms ease-in;
@@ -158,9 +164,22 @@ body {
   transition: transform 800ms ease-in;
   transition: transform 800ms ease-in, -webkit-transform 800ms ease-in;
   opacity: 0;
+  margin: 5px;
 }
 
-.slide-in.appear {
+.from-right {
+  -webkit-transform: translate(100%);
+          transform: translate(100%);
+  -webkit-transition: -webkit-transform 800ms ease-in;
+  transition: -webkit-transform 800ms ease-in;
+  transition: transform 800ms ease-in;
+  transition: transform 800ms ease-in, -webkit-transform 800ms ease-in;
+  opacity: 0;
+  margin: 5px;
+}
+
+.from-left.appear,
+.from-right.appear {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
@@ -223,6 +242,24 @@ body {
           box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
 }
 
+.projectTwo {
+  font-size: 200%;
+  color: #ff9100;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 5px;
+  background: black;
+}
+
+.projectThree {
+  font-size: 200%;
+  color: #ff9100;
+  height: 25rem;
+  width: 25rem;
+  border-radius: 5px;
+  background: black;
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -234,7 +271,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 80vh;
+  height: 100vh;
   background: conic-gradient(#1e0467, #a200ff) fixed;
   background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
   background-clip: text;
