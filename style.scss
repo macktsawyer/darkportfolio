@@ -57,13 +57,34 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
+.purpleBorderLine {
+    height: 1px;
+    background: hsl(278, 100%, 50%);
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em hsl(256, 91%, 35%),
+    0 0 0.5em hsl(278, 100%, 50%), 
+    0 0 0.1em hsl(256, 91%, 35%), 
+    0 10px 3px #000;
+}
+
+.orangeBorderLine {
+    height: 1px;
+    box-shadow: 0 -40px 100px,
+    0 0 3px,
+    0 0 2em $orangeColor,
+    0 0 0.5em $brightOrangeColor,
+    0 0 0.1em $orangeColor,
+    0 10px 3px #000;
+}
+
 .about-me {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-    height: 120vh;
+    height: 100vh;
     background: conic-gradient(
         $orangeColor,
         $brightOrangeColor
@@ -89,13 +110,19 @@ body {
     font-size: 150%;
 }
 
+.aboutLogos {
+    width: 100px;
+    height: 100px;
+    opacity: 0.6;
+}
+
 .projects {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 80vh;
+    height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -160,6 +187,12 @@ body {
 .from-right.appear {
     transform: translate(0);
     opacity: 1;
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em hsl(256, 91%, 35%),
+    0 0 0.5em hsl(278, 100%, 50%), 
+    0 0 0.1em hsl(256, 91%, 35%), 
+    0 10px 3px #000;
 }
 
 .projectButtons {
@@ -254,6 +287,13 @@ body {
     justify-content: center;
     text-align: center;
     height: 100vh;
+
+}
+
+.contact-title {
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 500%;
     background: conic-gradient(
         hsl(256, 93%, 21%),
         hsl(278, 100%, 50%)
@@ -268,8 +308,65 @@ body {
     -webkit-text-fill-color: transparent;
 }
 
-.contact-title {
-    color: white;
+.submitButton {
+    color: hsl(256, 96%, 18%);
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
-    font-size: 500%;
+    background: $orangeColor;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    border: 1px;
+    margin-left: 3px;
+    border-radius: 7px;
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em $orangeColor, 
+    0 0 0.5em $orangeColor, 
+    0 0 0.1em $orangeColor, 
+    0 10px 3px #000;
+    &:hover {
+        background: $brightOrangeColor;
+        box-shadow: 0 -40px 100px, 
+        0 0 3px, 
+        0 0 2em $brightOrangeColor, 
+        0 0 0.5em $brightOrangeColor, 
+        0 0 0.1em $brightOrangeColor, 
+        0 10px 3px #000;
+    }
+}
+
+.formFont {
+    color: $orangeColor;
+}
+
+.formBox {
+    background:hsl(256, 91%, 18%);
+    color: $brightOrangeColor;
+    margin: 5px;
+    width: 20vw;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: column;
+}
+
+.socialsMenu {
+    position: fixed;
+    border-top: $brightOrangeColor 1px solid;
+    border-right: $brightOrangeColor 1px solid;
+    border-bottom: $brightOrangeColor 1px solid;
+    border-radius: 0px 10px 10px 0px;
+    width: 75px;
+    top: 40vh;
+    left: 0;
+}
+
+.socialLink {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    cursor: pointer;
+    opacity: 60%;
 }

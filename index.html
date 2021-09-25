@@ -21,13 +21,22 @@
             </div>
         </container>
     </section>
+    <div class="purpleBorderLine">
+        
+    </div>
     <section class="about-me">
         <div>
             <h1 class="about-title">About Me</h1>
         </div>
         <br>
         <div class="about-para">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin fringilla justo diam, non dignissim erat sollicitudin molestie. Praesent lacus lectus, commodo a nisi et, hendrerit pulvinar sem. Nulla venenatis orci vel leo gravida, non interdum odio aliquet. Sed quis massa at quam ultricies hendrerit nec ut nisi. Donec tempus finibus tortor ut pharetra. Aenean dictum leo vitae enim auctor imperdiet. Mauris congue ex at libero pharetra, eget sagittis augue venenatis. Nulla vitae ex imperdiet, gravida odio at, interdum leo. Pellentesque metus ligula, vehicula sit amet lobortis nec, interdum commodo mauris. Vestibulum tempor lobortis condimentum. Morbi aliquam sapien dui, sed tristique dolor venenatis at. Proin finibus augue et convallis ullamcorper. Praesent bibendum, eros vitae blandit rhoncus, leo ex tincidunt massa, quis bibendum eros risus eu lectus.</p>
+            <p>Greetings! My name is Mack and I am a multi-disciplined and self-taught programmer. Initially learning python, I have moved on to learning web development skills and languages including but not limited to HTML, CSS, SASS, Javascript, and React.js. My passion for programming grows the more I learn and I have a growing dive straight into the tech and programming industry.</p>
+        </div>
+        <div>
+            <img src="html.gif" alt="HTML Logo" class="aboutLogos">
+            <img src="css.gif" alt="CSS Logo" class="aboutLogos">
+            <img src="jsorange.gif" alt="Javascript Logo" class="aboutLogos">
+            <img src="react.gif" alt="React Logo" class="aboutLogos">
         </div>
     </section>
     <section class="projects">
@@ -88,8 +97,29 @@
         </div>
     </section>
     <section class="contact">
-        <h1 class="contact-title">Contact Me</h1>
+        <container class="contactForm">
+            <h1 class="contact-title">Contact Me</h1>
+            <form action="https://formsubmit.co/vulpescodes@gmail.com" method="POST">
+                <label class="formFont">Name:</label>
+                <input class="formBox" type="text" name="name" placeholder="Name">
+                <br>
+                <label class="formFont">Email:</label>
+                <input class="formBox" type="email" name="email" placeholder="Email Address">
+                <br>
+                <label class="formFont">Content:</label>
+                <textarea class="formBox" rows="5" name="subject">
+
+                </textarea>
+                <br>
+                <button class="submitButton">Submit</button>
+            </form>
+        </container>
     </section>
+    <div class="socialsMenu">
+        <a href="https://www.linkedin.com/in/mack-sawyer-a1722b92/"><img src="linkedin.gif" alt="Linked In Logo Orange" class="socialLink"></a>
+        <a href="https://github.com/macktsawyer"><img src="github.gif" alt="Github logo in purple gradient" class="socialLink"></a>
+        <a href="https://www.codewars.com/users/macktsawyer"><img src="codewars.gif" alt="Codewars logo in purple and orange" class="socialLink"></a>
+    </div>
 </body>
 <script src="index.js"></script>
 </html>
