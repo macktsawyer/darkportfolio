@@ -41,7 +41,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 900%;
   -ms-flex-item-align: start;
       align-self: flex-start;
@@ -60,7 +60,13 @@ body {
   color: white;
   -ms-flex-item-align: center;
       align-self: center;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+.neonSign {
+  color: #a200ff;
+  font-size: 200%;
+  text-shadow: 0 0px 40px, 0 0 3px, 0 0 2em #3308aa, 0 0 0.5em #a200ff, 0 0 0.1em #3308aa, 0 10px 3px #000;
 }
 
 .purpleBorderLine {
@@ -101,7 +107,7 @@ body {
 
 .about-title {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 600%;
 }
 
@@ -132,7 +138,7 @@ body {
           flex-direction: column;
   text-align: center;
   height: 100vh;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .projectContainer {
@@ -150,7 +156,7 @@ body {
 
 .project-title {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 600%;
   background: conic-gradient(#1e0467, #a200ff) fixed;
   background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
@@ -228,6 +234,26 @@ body {
   background: black;
 }
 
+.projectFullContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.projectList {
+  color: #ff9100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+}
+
 .githubButton {
   color: #19025a;
   cursor: pointer;
@@ -300,7 +326,7 @@ body {
 
 .contact-title {
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 500%;
   background: conic-gradient(#1e0467, #a200ff) fixed;
   background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
@@ -312,7 +338,7 @@ body {
 .submitButton {
   color: #19025a;
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #ff9100;
   height: 25px;
   width: 100px;
