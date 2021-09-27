@@ -3,6 +3,7 @@ $orangeColor: hsl(34, 100%, 50%);
 $brightOrangeColor: hsl(14, 100%, 50%);
 $buttonWidth: 100px;
 $buttonHeight: 25px;
+$fontstyle: 'Montserrat', sans-serif;
 
 html {
     overflow-x: hidden;
@@ -42,7 +43,7 @@ body {
 .title-title {
     display: flex;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
     font-size: 900%;
     align-self: flex-start;
     margin: 0px;
@@ -54,7 +55,18 @@ body {
     display: flex;
     color: white;
     align-self: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
+}
+
+.neonSign {
+    color: hsl(278, 100%, 50%);
+    font-size: 200%;
+    text-shadow: 0 0px 40px, 
+    0 0 3px, 
+    0 0 2em hsl(256, 91%, 35%),
+    0 0 0.5em hsl(278, 100%, 50%), 
+    0 0 0.1em hsl(256, 91%, 35%), 
+    0 10px 3px #000;
 }
 
 .purpleBorderLine {
@@ -101,7 +113,7 @@ body {
 
 .about-title {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
     font-size: 600%;
 }
 
@@ -123,7 +135,7 @@ body {
     flex-direction: column;
     text-align: center;
     height: 100vh;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
 }
 
 .projectContainer {
@@ -135,7 +147,7 @@ body {
 
 .project-title {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
     font-size: 600%;
     background: conic-gradient(
         hsl(256, 93%, 21%),
@@ -210,6 +222,19 @@ body {
     width: 25rem;
     border-radius: $borderRadius;
     background: rgb(0, 0, 0);
+}
+
+.projectFullContainer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.projectList {
+    color: $orangeColor;
+    justify-content: center;
+    margin: 100px;
 }
 
 .githubButton {
@@ -293,7 +318,7 @@ body {
 
 .contact-title {
     color: rgb(255, 255, 255);
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
     font-size: 500%;
     background: conic-gradient(
         hsl(256, 93%, 21%),
@@ -312,7 +337,7 @@ body {
 .submitButton {
     color: hsl(256, 96%, 18%);
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fontstyle;
     background: $orangeColor;
     height: $buttonHeight;
     width: $buttonWidth;
