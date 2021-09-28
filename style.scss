@@ -34,39 +34,21 @@ body {
 }
 
 .title-container {
-    width: 80vw;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
     gap: 0px 0px;
 }
 
 .title-title {
-    display: flex;
     color: white;
     font-family: $fontstyle;
-    font-size: 900%;
-    align-self: flex-start;
+    font-size: 9rem;
     margin: 0px;
+    margin-right: 40%;
 }
 
 .title-subtitle {
-    justify-content: center;
-    align-content: center;
-    display: flex;
     color: white;
-    align-self: center;
     font-family: $fontstyle;
-}
-
-.neonSign {
-    color: hsl(278, 100%, 50%);
-    font-size: 200%;
-    text-shadow: 0 0px 40px, 
-    0 0 3px, 
-    0 0 2em hsl(256, 91%, 35%),
-    0 0 0.5em hsl(278, 100%, 50%), 
-    0 0 0.1em hsl(256, 91%, 35%), 
-    0 10px 3px #000;
 }
 
 .purpleBorderLine {
@@ -97,6 +79,7 @@ body {
     flex-direction: column;
     text-align: center;
     height: 100vh;
+    width: 100vw;
     background: conic-gradient(
         $orangeColor,
         $brightOrangeColor
@@ -134,7 +117,8 @@ body {
     justify-content: center;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    min-height: 100vh;
+    max-width: 100vw;
     font-family: $fontstyle;
 }
 
@@ -143,6 +127,11 @@ body {
     flex-direction: column;
     flex-wrap: column;
     height: 100%;
+    color: $orangeColor;
+    height: 25rem;
+    width: 25rem;
+    border-radius: $borderRadius;
+    background: rgb(0, 0, 0);
 }
 
 .project-title {
@@ -164,11 +153,13 @@ body {
 }
 
 .projectHeader {
-    font-size: 85%;
+    font-size: 200%;
 }
 
 .projectAbout {
-    font-size: 50%;
+    transform: translate(5%, 0%);
+    font-size: 100%;
+    width: 90%;
 }
 
 .projectWrap {
@@ -213,15 +204,6 @@ body {
    justify-content: end;
    margin: 10px;
    padding: 2px;
-}
-
-.projectOne {
-    font-size: 180%;
-    color: $orangeColor;
-    height: 25rem;
-    width: 25rem;
-    border-radius: $borderRadius;
-    background: rgb(0, 0, 0);
 }
 
 .projectFullContainer {
@@ -287,24 +269,6 @@ body {
         0 0 0.1em $brightOrangeColor, 
         0 10px 3px #000;
     }
-}
-
-.projectTwo {
-    font-size: 200%;
-    color: $orangeColor;
-    height: 25rem;
-    width: 25rem;
-    border-radius: $borderRadius;
-    background: rgb(0, 0, 0);
-}
-
-.projectThree {
-    font-size: 200%;
-    color: $orangeColor;
-    height: 25rem;
-    width: 25rem;
-    border-radius: $borderRadius;
-    background: rgb(0, 0, 0);
 }
 
 .contact {
@@ -395,4 +359,166 @@ body {
     padding: 10px;
     cursor: pointer;
     opacity: 60%;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: auto;
+    }
+    
+    .title-title {
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    .title-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .about-title {
+        font-size: 3.5rem;
+    }
+
+    .about-para {
+        width: 85%;
+        font-size: 1.2rem;
+    }
+
+    .aboutLogos {
+        height: 50px;
+        width: 50px;
+    }
+
+    .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+    .project-title {
+        font-size: 3.5rem;
+    }
+
+    .projectList {
+        display: none;
+    }
+
+    .projectAbout {
+        transform: translate(10%, 0%);
+        width: 80%;
+        font-size: 0.8rem;
+    }
+
+    .from-left,
+    .from-right {
+        transform: translate(0%);
+        transition: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+    }
+
+    .formBox {
+        width: 60vw;
+    }
+
+    .socialsMenu {
+        top: 5vh;
+        width: 50px;
+    }
+
+    .socialLink {
+        height: 25px;
+        width: 25px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    body {
+        overflow-x: auto;
+    }
+    
+    .title-title {
+        width: 100%;
+        font-size: 4rem;
+    }
+
+    .title-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .about-title {
+        font-size: 3.5rem;
+    }
+
+    .about-para {
+        width: 85%;
+        font-size: 0.8rem;
+    }
+
+    .aboutLogos {
+        height: 50px;
+        width: 50px;
+    }
+
+    .projects {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        min-height: 100vh;
+        max-width: 100vw;
+    }
+
+    .project-title {
+        font-size: 3.0rem;
+    }
+
+    .projectList {
+        display: none;
+    }
+
+    .projectHeader {
+        font-size: 1.0rem;
+    }
+
+    .projectAbout {
+        transform: translate(15%, 0%);
+        width: 75%;
+        font-size: 0.7rem;
+    }
+
+    .from-left,
+    .from-right {
+        transform: translate(0%);
+        transition: none;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .contact-title {
+        font-size: 3.5rem;
+    }
+
+    .formBox {
+        width: 60vw;
+    }
+
+    .socialsMenu {
+        top: 5vh;
+        width: 50px;
+    }
+
+    .socialLink {
+        height: 25px;
+        width: 25px;
+    }
 }
