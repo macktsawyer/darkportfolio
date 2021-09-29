@@ -192,8 +192,8 @@ body {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #3308aa, 0 0 0.5em #a200ff, 0 0 0.1em #3308aa, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #3308aa, 0 0 0.5em #a200ff, 0 0 0.1em #3308aa, 0 10px 3px #000;
+  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #290788, 0 0 0.5em #a612fd, 0 0 0.1em #3308aa, 0 10px 3px #000;
+          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #290788, 0 0 0.5em #a612fd, 0 0 0.1em #3308aa, 0 10px 3px #000;
 }
 
 .projectButtons {
