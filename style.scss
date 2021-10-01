@@ -13,6 +13,52 @@ body {
     background-color: black;
 }
 
+.titleShape {
+    display: flex;
+    align-items: center;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 200px solid hsl(278, 100%, 50%);
+    width: 0;
+    height: 0;
+    transform: rotate(225deg) translate(-210%, 350%);
+}
+
+.titleShape2 {
+    padding: 2px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 200px solid hsl(0, 0%, 0%);
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -110px;
+    right: 203px;
+}
+
+.titleShape3 {
+    display: flex;
+    align-items: center;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 200px solid hsl(278, 100%, 50%);
+    width: 0;
+    height: 0;
+    transform: rotate(45deg);
+}
+
+.titleShape4 {
+    padding: 2px;
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-top: 200px solid hsl(0, 0%, 0%);
+    width: 0;
+    height: 0;
+    position: relative;
+    top: -110px;
+    right: 203px;
+}
+
 .title {
     display: flex;
     align-items: center;

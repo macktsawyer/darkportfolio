@@ -6,6 +6,62 @@ body {
   background-color: black;
 }
 
+.titleShape {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 200px solid #a200ff;
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(225deg) translate(-210%, 350%);
+          transform: rotate(225deg) translate(-210%, 350%);
+}
+
+.titleShape2 {
+  padding: 2px;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 200px solid black;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -110px;
+  right: 203px;
+}
+
+.titleShape3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 200px solid #a200ff;
+  width: 0;
+  height: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.titleShape4 {
+  padding: 2px;
+  border-left: 200px solid transparent;
+  border-right: 200px solid transparent;
+  border-top: 200px solid black;
+  width: 0;
+  height: 0;
+  position: relative;
+  top: -110px;
+  right: 203px;
+}
+
 .title {
   display: -webkit-box;
   display: -ms-flexbox;
