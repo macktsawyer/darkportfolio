@@ -124,7 +124,7 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     text-align: center;
-    height: 100vh;
+    min-height: 60vh;
     width: 100vw;
     background: conic-gradient(
         $orangeColor,
@@ -322,8 +322,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    height: 100vh;
-
+    height: 60vh;
 }
 
 .contact-title {
@@ -416,6 +415,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1780px) {
+    .about-me {
+        min-height: 70vh;
+    }
+}
+
 @media screen and (max-width: 800px) {
     body {
         overflow-x: auto;
@@ -432,6 +437,10 @@ body {
 
     .about-title {
         font-size: 3.5rem;
+    }
+
+    .about-me {
+        min-height: 70vh;
     }
 
     .about-para {

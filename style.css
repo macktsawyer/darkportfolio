@@ -127,7 +127,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
-  height: 100vh;
+  min-height: 60vh;
   width: 100vw;
   background: conic-gradient(#ff9100, #ff3c00) fixed;
   background: radial-gradient(#f5f100, #ff3c00, #f5f100) fixed;
@@ -334,7 +334,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 .contact-title {
@@ -419,6 +419,12 @@ body {
   }
 }
 
+@media screen and (max-width: 1780px) {
+  .about-me {
+    min-height: 70vh;
+  }
+}
+
 @media screen and (max-width: 800px) {
   body {
     overflow-x: auto;
@@ -432,6 +438,9 @@ body {
   }
   .about-title {
     font-size: 3.5rem;
+  }
+  .about-me {
+    min-height: 70vh;
   }
   .about-para {
     width: 85%;
