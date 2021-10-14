@@ -102,14 +102,8 @@ body {
 .purpleBorderLine {
   height: 1px;
   background: #a200ff;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #3308aa, 0 0 0.5em #a200ff, 0 0 0.1em #3308aa, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #3308aa, 0 0 0.5em #a200ff, 0 0 0.1em #3308aa, 0 10px 3px #000;
-}
-
-.orangeBorderLine {
-  height: 1px;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff3c00, 0 0 0.1em #ff9100, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff3c00, 0 0 0.1em #ff9100, 0 10px 3px #000;
+  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
+          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
 }
 
 .about-me {
@@ -136,18 +130,18 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.about-title {
+.about-me .about-title {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 600%;
 }
 
-.about-para {
+.about-me .about-para {
   width: 70%;
   font-size: 150%;
 }
 
-.aboutLogos {
+.about-me .aboutLogos {
   width: 100px;
   height: 100px;
   opacity: 0.6;
@@ -173,6 +167,45 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.projects .project-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 600%;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.projectFullContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 10px;
+}
+
+.projectFullContainer .projectWrap {
+  padding: 2px;
+  position: relative;
+  border-radius: 5px;
+  background: -webkit-gradient(linear, left top, right top, from(#1e0467), color-stop(#a200ff), to(#1e0467));
+  background: linear-gradient(to right, #1e0467, #a200ff, #1e0467);
+}
+
+.projectFullContainer .projectList {
+  color: #ff9100;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 100px;
+}
+
 .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -191,34 +224,28 @@ body {
   background: black;
 }
 
-.project-title {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 600%;
-  background: conic-gradient(#1e0467, #a200ff) fixed;
-  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.projectHeader {
+.projectContainer .projectHeader {
   font-size: 200%;
 }
 
-.projectAbout {
+.projectContainer .projectAbout {
   -webkit-transform: translate(5%, 0%);
           transform: translate(5%, 0%);
   font-size: 100%;
   width: 90%;
 }
 
-.projectWrap {
+.projectContainer .projectButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 10px;
   padding: 2px;
-  position: relative;
-  border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#3308aa), color-stop(#a200ff), to(#3308aa));
-  background: linear-gradient(to right, #3308aa, #a200ff, #3308aa);
 }
 
 .from-left {
@@ -248,45 +275,12 @@ body {
   -webkit-transform: translate(0);
           transform: translate(0);
   opacity: 1;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #290788, 0 0 0.5em #a612fd, 0 0 0.1em #3308aa, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #290788, 0 0 0.5em #a612fd, 0 0 0.1em #3308aa, 0 10px 3px #000;
-}
-
-.projectButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin: 10px;
-  padding: 2px;
-}
-
-.projectFullContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 10px;
-}
-
-.projectList {
-  color: #ff9100;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 100px;
+  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
+          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
 }
 
 .githubButton {
-  color: #19025a;
+  color: #1e0467;
   cursor: pointer;
   background: #ff9100;
   height: 25px;
@@ -305,7 +299,7 @@ body {
 }
 
 .visitButton {
-  color: #19025a;
+  color: #1e0467;
   cursor: pointer;
   background: #ff9100;
   height: 25px;
@@ -349,7 +343,7 @@ body {
 }
 
 .submitButton {
-  color: #19025a;
+  color: #1e0467;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   background: #ff9100;
@@ -368,17 +362,6 @@ body {
           box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
 }
 
-.formFont {
-  color: #ff9100;
-}
-
-.formBox {
-  background: #1a0458;
-  color: #ff3c00;
-  margin: 5px;
-  width: 20vw;
-}
-
 .contactForm {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -389,6 +372,17 @@ body {
           flex-direction: column;
   -ms-flex-wrap: column;
       flex-wrap: column;
+}
+
+.contactForm .formFont {
+  color: #ff9100;
+}
+
+.contactForm .formBox {
+  background: #1e0467;
+  color: #ff3c00;
+  margin: 5px;
+  width: 20vw;
 }
 
 .socialsMenu {
@@ -402,7 +396,7 @@ body {
   left: 0;
 }
 
-.socialLink {
+.socialsMenu .socialLink {
   width: 50px;
   height: 50px;
   padding: 10px;

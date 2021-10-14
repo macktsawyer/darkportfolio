@@ -1,9 +1,43 @@
 $borderRadius: 5px;
 $orangeColor: hsl(34, 100%, 50%);
+$yellowColor: hsl(59, 100%, 48%);
 $brightOrangeColor: hsl(14, 100%, 50%);
+$darkPurple: hsl(256, 93%, 21%);
+$lightPurple: hsl(256, 91%, 35%);
+$pinkColor: hsl(278, 100%, 50%);
 $buttonWidth: 100px;
 $buttonHeight: 25px;
 $fontstyle: 'Montserrat', sans-serif;
+
+@mixin fontGradientPurple {
+    background: conic-gradient(
+        $darkPurple,
+        $pinkColor
+    ) fixed;
+    background: radial-gradient(
+        $lightPurple,
+        $pinkColor,
+        $lightPurple,
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin fontGradientOrange {
+    background: conic-gradient(
+        $orangeColor,
+        $brightOrangeColor
+    ) fixed;
+    background: radial-gradient(
+        $yellowColor,
+        $brightOrangeColor,
+        $yellowColor
+    ) fixed;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 html {
     overflow-x: hidden;
@@ -18,7 +52,7 @@ body {
     align-items: center;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-top: 200px solid hsl(278, 100%, 50%);
+    border-top: 200px solid $pinkColor;
     width: 0;
     height: 0;
     transform: rotate(225deg) translate(-210%, 350%);
@@ -41,7 +75,7 @@ body {
     align-items: center;
     border-left: 200px solid transparent;
     border-right: 200px solid transparent;
-    border-top: 200px solid hsl(278, 100%, 50%);
+    border-top: 200px solid $pinkColor;
     width: 0;
     height: 0;
     transform: rotate(45deg);
@@ -65,18 +99,7 @@ body {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    background: conic-gradient(
-        hsl(256, 93%, 21%),
-        hsl(278, 100%, 50%)
-    ) fixed;
-    background: radial-gradient(
-        hsl(256, 91%, 35%),
-        hsl(278, 100%, 50%),
-        hsl(256, 91%, 35%),
-    ) fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include fontGradientPurple();
 }
 
 .title-container {
@@ -99,22 +122,12 @@ body {
 
 .purpleBorderLine {
     height: 1px;
-    background: hsl(278, 100%, 50%);
+    background: $pinkColor;
     box-shadow: 0 -40px 100px, 
     0 0 3px, 
-    0 0 2em hsl(256, 91%, 35%),
-    0 0 0.5em hsl(278, 100%, 50%), 
-    0 0 0.1em hsl(256, 91%, 35%), 
-    0 10px 3px #000;
-}
-
-.orangeBorderLine {
-    height: 1px;
-    box-shadow: 0 -40px 100px,
-    0 0 3px,
-    0 0 2em $orangeColor,
-    0 0 0.5em $brightOrangeColor,
-    0 0 0.1em $orangeColor,
+    0 0 2em $darkPurple,
+    0 0 0.5em $pinkColor, 
+    0 0 0.1em $darkPurple, 
     0 10px 3px #000;
 }
 
@@ -126,35 +139,21 @@ body {
     text-align: center;
     min-height: 60vh;
     width: 100vw;
-    background: conic-gradient(
-        $orangeColor,
-        $brightOrangeColor
-    ) fixed;
-    background: radial-gradient(
-        hsl(59, 100%, 48%),
-        hsl(14, 100%, 50%),
-        hsl(59, 100%, 48%)
-    ) fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.about-title {
-    color: white;
-    font-family: $fontstyle;
-    font-size: 600%;
-}
-
-.about-para {
-    width: 70%;
-    font-size: 150%;
-}
-
-.aboutLogos {
-    width: 100px;
-    height: 100px;
-    opacity: 0.6;
+    @include fontGradientOrange();
+    .about-title {
+        color: white;
+        font-family: $fontstyle;
+        font-size: 600%;
+    }
+    .about-para {
+        width: 70%;
+        font-size: 150%;
+    }
+    .aboutLogos {
+        width: 100px;
+        height: 100px;
+        opacity: 0.6;
+    }
 }
 
 .projects {
@@ -166,6 +165,33 @@ body {
     min-height: 100vh;
     max-width: 100vw;
     font-family: $fontstyle;
+    .project-title {
+        color: white;
+        font-family: $fontstyle;
+        font-size: 600%;
+        @include fontGradientPurple();
+    }
+}
+
+.projectFullContainer {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin: 10px;
+    .projectWrap {
+        padding: 2px;
+        position: relative;
+        border-radius: $borderRadius;
+        background: linear-gradient(to right,        
+        $darkPurple,
+        $pinkColor,
+        $darkPurple);
+    }
+    .projectList {
+        color: $orangeColor;
+        justify-content: center;
+        margin: 100px;
+    }
 }
 
 .projectContainer {
@@ -178,44 +204,21 @@ body {
     width: 25rem;
     border-radius: $borderRadius;
     background: rgb(0, 0, 0);
-}
-
-.project-title {
-    color: white;
-    font-family: $fontstyle;
-    font-size: 600%;
-    background: conic-gradient(
-        hsl(256, 93%, 21%),
-        hsl(278, 100%, 50%)
-    ) fixed;
-    background: radial-gradient(
-        hsl(256, 91%, 35%),
-        hsl(278, 100%, 50%),
-        hsl(256, 91%, 35%)
-    ) fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.projectHeader {
-    font-size: 200%;
-}
-
-.projectAbout {
-    transform: translate(5%, 0%);
-    font-size: 100%;
-    width: 90%;
-}
-
-.projectWrap {
-    padding: 2px;
-    position: relative;
-    border-radius: $borderRadius;
-    background: linear-gradient(to right,        
-    hsl(256, 91%, 35%),
-    hsl(278, 100%, 50%),
-    hsl(256, 91%, 35%));
+    .projectHeader {
+        font-size: 200%;
+    }
+    .projectAbout {
+        transform: translate(5%, 0%);
+        font-size: 100%;
+        width: 90%;
+    }
+    .projectButtons {
+        display: flex;
+        align-self: center;
+        justify-content: end;
+        margin: 10px;
+        padding: 2px;
+     }
 }
 
 .from-left {
@@ -238,35 +241,14 @@ body {
     opacity: 1;
     box-shadow: 0 -40px 100px, 
     0 0 3px, 
-    0 0 2em hsl(256, 90%, 28%),
-    0 0 0.5em hsl(278, 98%, 53%), 
-    0 0 0.1em hsl(256, 91%, 35%), 
+    0 0 2em $darkPurple,
+    0 0 0.5em $pinkColor, 
+    0 0 0.1em $darkPurple, 
     0 10px 3px #000;
 }
 
-.projectButtons {
-   display: flex;
-   align-self: center;
-   justify-content: end;
-   margin: 10px;
-   padding: 2px;
-}
-
-.projectFullContainer {
-    display: flex;
-    align-self: center;
-    justify-content: center;
-    margin: 10px;
-}
-
-.projectList {
-    color: $orangeColor;
-    justify-content: center;
-    margin: 100px;
-}
-
 .githubButton {
-    color: hsl(256, 96%, 18%);
+    color: $darkPurple;
     cursor: pointer;
     background: $orangeColor;
     height: $buttonHeight;
@@ -292,7 +274,7 @@ body {
 }
 
 .visitButton {
-    color: hsl(256, 96%, 18%);
+    color: $darkPurple;
     cursor: pointer;
     background: $orangeColor;
     height: $buttonHeight;
@@ -329,22 +311,11 @@ body {
     color: rgb(255, 255, 255);
     font-family: $fontstyle;
     font-size: 500%;
-    background: conic-gradient(
-        hsl(256, 93%, 21%),
-        hsl(278, 100%, 50%)
-    ) fixed;
-    background: radial-gradient(
-        hsl(256, 91%, 35%),
-        hsl(278, 100%, 50%),
-        hsl(256, 91%, 35%),
-    ) fixed;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include fontGradientPurple();
 }
 
 .submitButton {
-    color: hsl(256, 96%, 18%);
+    color: $darkPurple;
     cursor: pointer;
     font-family: $fontstyle;
     background: $orangeColor;
@@ -370,21 +341,19 @@ body {
     }
 }
 
-.formFont {
-    color: $orangeColor;
-}
-
-.formBox {
-    background:hsl(256, 91%, 18%);
-    color: $brightOrangeColor;
-    margin: 5px;
-    width: 20vw;
-}
-
 .contactForm {
     display: flex;
     flex-direction: column;
     flex-wrap: column;
+    .formFont {
+        color: $orangeColor;
+    }
+    .formBox {
+        background:$darkPurple;
+        color: $brightOrangeColor;
+        margin: 5px;
+        width: 20vw;
+    }
 }
 
 .socialsMenu {
@@ -396,14 +365,13 @@ body {
     width: 75px;
     top: 40vh;
     left: 0;
-}
-
-.socialLink {
-    width: 50px;
-    height: 50px;
-    padding: 10px;
-    cursor: pointer;
-    opacity: 60%;
+    .socialLink {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        cursor: pointer;
+        opacity: 60%;
+    }
 }
 
 @media screen and (max-width: 1800px) {
