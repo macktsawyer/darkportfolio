@@ -81,12 +81,12 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.title-container {
+.title .title-container {
   width: 100%;
   gap: 0px 0px;
 }
 
-.title-title {
+.title .title-container .title-title {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 9rem;
@@ -94,7 +94,7 @@ body {
   margin-right: 40%;
 }
 
-.title-subtitle {
+.title .title-container .title-subtitle {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
@@ -427,20 +427,20 @@ body {
     width: 100%;
     font-size: 4rem;
   }
-  .title-subtitle {
+  .title-title .title-subtitle {
     font-size: 0.8rem;
-  }
-  .about-title {
-    font-size: 3.5rem;
   }
   .about-me {
     min-height: 70vh;
   }
-  .about-para {
+  .about-me .about-para {
     width: 85%;
     font-size: 1.2rem;
   }
-  .aboutLogos {
+  .about-me .about-title {
+    font-size: 3.5rem;
+  }
+  .about-me .aboutLogos {
     height: 50px;
     width: 50px;
   }
@@ -462,13 +462,13 @@ body {
     min-height: 100vh;
     max-width: 100vw;
   }
-  .project-title {
+  .projects .project-title {
     font-size: 3.5rem;
   }
-  .projectList {
+  .projects .projectList {
     display: none;
   }
-  .projectAbout {
+  .projects .projectAbout {
     -webkit-transform: translate(10%, 0%);
             transform: translate(10%, 0%);
     width: 80%;
@@ -505,19 +505,22 @@ body {
   }
   .title-title {
     width: 100%;
-    font-size: 4rem;
+    font-size: 1rem;
   }
   .title-subtitle {
     font-size: 0.8rem;
   }
-  .about-title {
+  .about-me {
+    min-height: 70vh;
+  }
+  .about-me .about-title {
     font-size: 3.5rem;
   }
-  .about-para {
+  .about-me .about-para {
     width: 85%;
     font-size: 0.8rem;
   }
-  .aboutLogos {
+  .about-me .aboutLogos {
     height: 50px;
     width: 50px;
   }
@@ -539,16 +542,16 @@ body {
     min-height: 100vh;
     max-width: 100vw;
   }
-  .project-title {
-    font-size: 3.0rem;
+  .projects .project-title {
+    font-size: 3.5rem;
   }
-  .projectList {
+  .projects .projectList {
     display: none;
   }
-  .projectHeader {
-    font-size: 1.0rem;
+  .projects .projectHeader {
+    font-size: 2.0rem;
   }
-  .projectAbout {
+  .projects .projectAbout {
     -webkit-transform: translate(15%, 0%);
             transform: translate(15%, 0%);
     width: 75%;
@@ -564,18 +567,18 @@ body {
     margin-left: 0px;
   }
   .contact-title {
-    font-size: 3.5rem;
+    font-size: 3.0rem;
   }
   .formBox {
     width: 60vw;
   }
   .socialsMenu {
     top: 5vh;
-    width: 50px;
+    width: 40px;
   }
   .socialLink {
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
