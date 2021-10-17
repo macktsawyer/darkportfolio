@@ -106,7 +106,7 @@ body {
         .title-title {
             color: white;
             font-family: $fontstyle;
-            font-size: 9rem;
+            font-size: 900%;
             margin: 0px;
             margin-right: 40%;
         }
@@ -464,16 +464,16 @@ body {
 
 @media screen and (max-width: 350px) {
     body {
-        overflow-x: auto;
+        overflow-x: none;
     }
     
-    .title-title {
-        width: 100%;
-        font-size: 1rem;
-    }
-
-    .title-subtitle {
-        font-size: 0.8rem;
+    .title {
+        h1 {
+            font-size: 3rem !important;
+        }
+        h2 {
+            font-size: 0.8rem;
+        }
     }
 
     .about-me {
@@ -537,7 +537,7 @@ body {
     }
 
     .socialLink {
-        height: 20px;
-        width: 20px;
+        max-height: 20px;
+        max-width: 20px;
     }
 };
