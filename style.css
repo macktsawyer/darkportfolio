@@ -423,15 +423,21 @@ body {
   body {
     overflow-x: auto;
   }
+  .title {
+    -webkit-text-fill-color: #1e0467;
+  }
   .title-title {
     width: 100%;
     font-size: 4rem !important;
+    color: #1e0467;
   }
   .title-title .title-subtitle {
     font-size: 0.8rem;
   }
   .about-me {
     min-height: 70vh;
+    color: #1e0467;
+    -webkit-text-fill-color: #ff9100;
   }
   .about-me .about-para {
     width: 85%;

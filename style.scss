@@ -391,9 +391,14 @@ body {
         overflow-x: auto;
     }
     
+    .title{
+        -webkit-text-fill-color: $darkPurple;
+    }
+    
     .title-title {
         width: 100%;
         font-size: 4rem !important;
+        color: $darkPurple;
         .title-subtitle {
             font-size: 0.8rem;
         }
@@ -401,6 +406,8 @@ body {
 
     .about-me {
         min-height: 70vh;
+        color: $darkPurple;
+        -webkit-text-fill-color: $orangeColor;
         .about-para {
             width: 85%;
             font-size: 1.2rem;
