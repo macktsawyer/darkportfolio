@@ -425,7 +425,7 @@ body {
   }
   .title-title {
     width: 100%;
-    font-size: 4rem;
+    font-size: 4rem !important;
   }
   .title-title .title-subtitle {
     font-size: 0.8rem;
@@ -494,8 +494,8 @@ body {
     width: 50px;
   }
   .socialLink {
-    height: 25px;
-    width: 25px;
+    max-height: 25px;
+    max-width: 25px;
   }
 }
 
