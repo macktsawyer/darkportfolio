@@ -1,21 +1,23 @@
 'use strict'
 
-const projectSliders= document.querySelectorAll('.slide-in');
+const observedElements = document.querySelectorAll('.fadeup');
 
-const appearOptions = {};
+const options = {
+    root: null,
+    threshold: 0.1,
+    rootMargin: '-50px'
+};
 
-const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+const inViewCallback = entries => {
     entries.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('appear');
-            appearOnScroll.unobserve(entry.target);
+        if (entry.isIntersecting) {
+            setTimeout(() => {entry.target.classList.add('in-view'); }, 200);
         }
-    }
-);
-}, appearOptions);
+    })
+}
 
-projectSliders.forEach(slider => {
-    appearOnScroll.observe(slider);
+let observer = new IntersectionObserver(inViewCallback, options);
+
+observedElements.forEach(element => {
+    observer.observe(element);
 })

@@ -167,18 +167,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.projects .project-title {
-  color: white;
-  font-family: "Montserrat", sans-serif;
-  font-size: 600%;
-  background: conic-gradient(#1e0467, #a200ff) fixed;
-  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.projects .allProjectsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.projectFullContainer {
+.projects .allProjectsContainer .projectFullContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +195,7 @@ body {
   margin: 10px;
 }
 
-.projectFullContainer .projectWrap {
+.projects .allProjectsContainer .projectFullContainer .projectWrap {
   padding: 2px;
   position: relative;
   border-radius: 5px;
@@ -198,15 +203,7 @@ body {
   background: linear-gradient(to right, #1e0467, #a200ff, #1e0467);
 }
 
-.projectFullContainer .projectList {
-  color: #ff9100;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 100px;
-}
-
-.projectContainer {
+.projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -224,18 +221,18 @@ body {
   background: black;
 }
 
-.projectContainer .projectHeader {
+.projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectHeader {
   font-size: 200%;
 }
 
-.projectContainer .projectAbout {
+.projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectAbout {
   -webkit-transform: translate(5%, 0%);
           transform: translate(5%, 0%);
   font-size: 100%;
   width: 90%;
 }
 
-.projectContainer .projectButtons {
+.projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,35 +245,35 @@ body {
   padding: 2px;
 }
 
-.from-left {
-  -webkit-transform: translate(-100%);
-          transform: translate(-100%);
-  -webkit-transition: -webkit-transform 800ms ease-in;
-  transition: -webkit-transform 800ms ease-in;
-  transition: transform 800ms ease-in;
-  transition: transform 800ms ease-in, -webkit-transform 800ms ease-in;
-  opacity: 0;
-  margin: 5px;
+.projects .project-title {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 600%;
+  background: conic-gradient(#1e0467, #a200ff) fixed;
+  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.from-right {
-  -webkit-transform: translate(100%);
-          transform: translate(100%);
-  -webkit-transition: -webkit-transform 800ms ease-in;
-  transition: -webkit-transform 800ms ease-in;
-  transition: transform 800ms ease-in;
-  transition: transform 800ms ease-in, -webkit-transform 800ms ease-in;
+.fadeup {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
   opacity: 0;
-  margin: 5px;
+  -webkit-transition-property: opacity, -webkit-transform;
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
+          transition-timing-function: linear;
 }
 
-.from-left.appear,
-.from-right.appear {
-  -webkit-transform: translate(0);
-          transform: translate(0);
+.in-view {
+  -webkit-transform: none;
+          transform: none;
   opacity: 1;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
 }
 
 .githubButton {
