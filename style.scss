@@ -493,20 +493,28 @@ body {
         text-align: center;
         min-height: 100vh;
         max-width: 100vw;
-        .project-title {
-            font-size: 3.5rem;
-        };
-        .projectList {
-            display: none;
-        };
-        .projectHeader {
-            font-size: 2.0rem;
-        };
-        .projectAbout {
-            transform: translate(15%, 0%);
-            width: 75%;
-            font-size: 0.7rem;
-        };
+        .projectContainer {
+            display: flex;
+            .project-title {
+                font-size: 3.5rem;
+            };
+            .projectList {
+                display: none;
+            };
+            .projectHeader {
+                font-size: 2.0rem;
+            };
+            .projectAbout {
+                transform: translate(15%, 0%);
+                justify-content: center;
+                align-self: center;
+                p {
+                    width: 90%;
+                    font-size: 0.9rem;
+
+                }
+            };
+        }
     };
 
     .from-left,

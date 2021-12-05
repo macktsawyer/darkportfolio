@@ -544,20 +544,33 @@ body {
     min-height: 100vh;
     max-width: 100vw;
   }
-  .projects .project-title {
+  .projects .projectContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .projects .projectContainer .project-title {
     font-size: 3.5rem;
   }
-  .projects .projectList {
+  .projects .projectContainer .projectList {
     display: none;
   }
-  .projects .projectHeader {
+  .projects .projectContainer .projectHeader {
     font-size: 2.0rem;
   }
-  .projects .projectAbout {
+  .projects .projectContainer .projectAbout {
     -webkit-transform: translate(15%, 0%);
             transform: translate(15%, 0%);
-    width: 75%;
-    font-size: 0.7rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .projects .projectContainer .projectAbout p {
+    width: 90%;
+    font-size: 0.9rem;
   }
   .from-left,
   .from-right {
