@@ -521,8 +521,19 @@ body {
         font-size: 3.0rem;
     }
 
-    .formBox {
-        width: 60vw;
+    .contactForm {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: column;
+        .formFont {
+            color: $orangeColor;
+        }
+        .formBox {
+            background:$darkPurple;
+            color: $brightOrangeColor;
+            margin: 5px;
+            width: 50vw;
+        }
     }
 
     .socialsMenu {
