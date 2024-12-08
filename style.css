@@ -7,26 +7,21 @@ body {
 }
 
 .titleShape {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid #a200ff;
+  border-top: 200px solid hsl(278, 100%, 50%);
   width: 0;
   height: 0;
-  -webkit-transform: rotate(225deg) translate(-210%, 350%);
-          transform: rotate(225deg) translate(-210%, 350%);
+  transform: rotate(225deg) translate(-210%, 350%);
 }
 
 .titleShape2 {
   padding: 2px;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid black;
+  border-top: 200px solid hsl(0, 0%, 0%);
   width: 0;
   height: 0;
   position: relative;
@@ -35,26 +30,21 @@ body {
 }
 
 .titleShape3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid #a200ff;
+  border-top: 200px solid hsl(278, 100%, 50%);
   width: 0;
   height: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .titleShape4 {
   padding: 2px;
   border-left: 200px solid transparent;
   border-right: 200px solid transparent;
-  border-top: 200px solid black;
+  border-top: 200px solid hsl(0, 0%, 0%);
   width: 0;
   height: 0;
   position: relative;
@@ -63,29 +53,21 @@ body {
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 100vh;
-  background: conic-gradient(#1e0467, #a200ff) fixed;
-  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background: conic-gradient(hsl(256, 93%, 21%), hsl(278, 100%, 50%)) fixed;
+  background: radial-gradient(hsl(256, 91%, 35%), hsl(278, 100%, 50%), hsl(256, 91%, 35%)) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .title .title-container {
   width: 100%;
   gap: 0px 0px;
 }
-
 .title .title-container .title-title {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -93,7 +75,6 @@ body {
   margin: 0px;
   margin-right: 40%;
 }
-
 .title .title-container .title-subtitle {
   color: white;
   font-family: "Montserrat", sans-serif;
@@ -101,46 +82,33 @@ body {
 
 .purpleBorderLine {
   height: 1px;
-  background: #a200ff;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #1e0467, 0 0 0.5em #a200ff, 0 0 0.1em #1e0467, 0 10px 3px #000;
+  background: hsl(278, 100%, 50%);
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(256, 93%, 21%), 0 0 0.5em hsl(278, 100%, 50%), 0 0 0.1em hsl(256, 93%, 21%), 0 10px 3px #000;
 }
 
 .about-me {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   text-align: center;
   min-height: 60vh;
   width: 100vw;
-  background: conic-gradient(#ff9100, #ff3c00) fixed;
-  background: radial-gradient(#f5f100, #ff3c00, #f5f100) fixed;
+  background: conic-gradient(hsl(34, 100%, 50%), hsl(14, 100%, 50%)) fixed;
+  background: radial-gradient(hsl(59, 100%, 48%), hsl(14, 100%, 50%), hsl(59, 100%, 48%)) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 .about-me .about-title {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 600%;
 }
-
 .about-me .about-para {
   width: 70%;
   font-size: 150%;
 }
-
 .about-me .aboutLogos {
   width: 100px;
   height: 100px;
@@ -148,251 +116,219 @@ body {
 }
 
 .projects {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   text-align: center;
   min-height: 100vh;
   max-width: 100vw;
   font-family: "Montserrat", sans-serif;
 }
-
 .projects .allProjectsContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 80vw;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .projects .allProjectsContainer .projectFullContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-self: center;
+  justify-content: center;
   margin: 10px;
 }
-
 .projects .allProjectsContainer .projectFullContainer .projectWrap {
   padding: 2px;
   position: relative;
   border-radius: 5px;
-  background: -webkit-gradient(linear, left top, right top, from(#1e0467), color-stop(#a200ff), to(#1e0467));
-  background: linear-gradient(to right, #1e0467, #a200ff, #1e0467);
+  background: linear-gradient(to right, hsl(256, 93%, 21%), hsl(278, 100%, 50%), hsl(256, 93%, 21%));
 }
-
 .projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: column;
-      flex-wrap: column;
+  flex-direction: column;
+  flex-wrap: column;
   height: 100%;
-  color: #ff9100;
+  color: hsl(34, 100%, 50%);
   height: 25rem;
   width: 25rem;
   border-radius: 5px;
-  background: black;
+  background: rgb(0, 0, 0);
 }
-
 .projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectHeader {
   font-size: 200%;
+  margin-block-start: 20px;
+  margin-block-end: auto;
 }
-
+.projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectSubheader {
+  margin-block-start: 1px;
+  margin-block-end: 10px;
+  color: red;
+}
 .projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectAbout {
-  -webkit-transform: translate(5%, 0%);
-          transform: translate(5%, 0%);
+  transform: translate(5%, 0%);
   font-size: 100%;
   width: 90%;
 }
-
 .projects .allProjectsContainer .projectFullContainer .projectWrap .projectContainer .projectButtons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: center;
-      align-self: center;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
+  align-self: center;
+  justify-content: end;
   margin: 10px;
   padding: 2px;
 }
-
 .projects .project-title {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 600%;
-  background: conic-gradient(#1e0467, #a200ff) fixed;
-  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background: conic-gradient(hsl(256, 93%, 21%), hsl(278, 100%, 50%)) fixed;
+  background: radial-gradient(hsl(256, 91%, 35%), hsl(278, 100%, 50%), hsl(256, 91%, 35%)) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fadeup {
-  -webkit-transform: translateY(50px);
-          transform: translateY(50px);
+  transform: translateY(50px);
   opacity: 0;
-  -webkit-transition-property: opacity, -webkit-transform;
-  transition-property: opacity, -webkit-transform;
   transition-property: transform, opacity;
-  transition-property: transform, opacity, -webkit-transform;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
-  -webkit-transition-timing-function: linear;
-          transition-timing-function: linear;
+  transition-duration: 1s;
+  transition-timing-function: linear;
 }
 
 .in-view {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
   opacity: 1;
 }
 
 .githubButton {
-  color: #1e0467;
+  color: hsl(256, 93%, 21%);
   cursor: pointer;
-  background: #ff9100;
+  background: hsl(34, 100%, 50%);
   height: 25px;
   width: 100px;
   border: 1px;
   margin-right: 3px;
   border-radius: 7px;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(34, 100%, 50%), 0 0 0.5em hsl(34, 100%, 50%), 0 0 0.1em hsl(34, 100%, 50%), 0 10px 3px #000;
 }
-
 .githubButton:hover {
-  background: #ff3c00;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
+  background: hsl(14, 100%, 50%);
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(14, 100%, 50%), 0 0 0.5em hsl(14, 100%, 50%), 0 0 0.1em hsl(14, 100%, 50%), 0 10px 3px #000;
 }
 
 .visitButton {
-  color: #1e0467;
+  color: hsl(256, 93%, 21%);
   cursor: pointer;
-  background: #ff9100;
+  background: hsl(34, 100%, 50%);
   height: 25px;
   width: 100px;
   border: 1px;
   margin-left: 3px;
   border-radius: 7px;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(34, 100%, 50%), 0 0 0.5em hsl(34, 100%, 50%), 0 0 0.1em hsl(34, 100%, 50%), 0 10px 3px #000;
+}
+.visitButton:hover {
+  background: hsl(14, 100%, 50%);
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(14, 100%, 50%), 0 0 0.5em hsl(14, 100%, 50%), 0 0 0.1em hsl(14, 100%, 50%), 0 10px 3px #000;
 }
 
-.visitButton:hover {
-  background: #ff3c00;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
+.previewButton {
+  color: hsl(256, 93%, 21%);
+  cursor: pointer;
+  background: hsl(34, 100%, 50%);
+  height: 25px;
+  width: 100px;
+  border: 1px;
+  margin-left: 3px;
+  border-radius: 7px;
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(34, 100%, 50%), 0 0 0.5em hsl(34, 100%, 50%), 0 0 0.1em hsl(34, 100%, 50%), 0 10px 3px #000;
+}
+.previewButton:hover {
+  background: hsl(14, 100%, 50%);
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(14, 100%, 50%), 0 0 0.5em hsl(14, 100%, 50%), 0 0 0.1em hsl(14, 100%, 50%), 0 10px 3px #000;
+}
+
+#previewContainer {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+#previewContainer #previewImage {
+  transform: translate(10%, 10%);
+  width: 80vw;
+  height: 80vh;
+  border: 2px solid white;
+  border-radius: 10px;
 }
 
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   height: 60vh;
 }
 
 .contact-title {
-  color: white;
+  color: rgb(255, 255, 255);
   font-family: "Montserrat", sans-serif;
   font-size: 500%;
-  background: conic-gradient(#1e0467, #a200ff) fixed;
-  background: radial-gradient(#3308aa, #a200ff, #3308aa) fixed;
+  background: conic-gradient(hsl(256, 93%, 21%), hsl(278, 100%, 50%)) fixed;
+  background: radial-gradient(hsl(256, 91%, 35%), hsl(278, 100%, 50%), hsl(256, 91%, 35%)) fixed;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .submitButton {
-  color: #1e0467;
+  color: hsl(256, 93%, 21%);
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
-  background: #ff9100;
+  background: hsl(34, 100%, 50%);
   height: 25px;
   width: 100px;
   border: 1px;
   margin-left: 3px;
   border-radius: 7px;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff9100, 0 0 0.5em #ff9100, 0 0 0.1em #ff9100, 0 10px 3px #000;
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(34, 100%, 50%), 0 0 0.5em hsl(34, 100%, 50%), 0 0 0.1em hsl(34, 100%, 50%), 0 10px 3px #000;
 }
-
 .submitButton:hover {
-  background: #ff3c00;
-  -webkit-box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
-          box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em #ff3c00, 0 0 0.5em #ff3c00, 0 0 0.1em #ff3c00, 0 10px 3px #000;
+  background: hsl(14, 100%, 50%);
+  box-shadow: 0 -40px 100px, 0 0 3px, 0 0 2em hsl(14, 100%, 50%), 0 0 0.5em hsl(14, 100%, 50%), 0 0 0.1em hsl(14, 100%, 50%), 0 10px 3px #000;
 }
 
 .contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: column;
-      flex-wrap: column;
+  flex-direction: column;
+  flex-wrap: column;
 }
-
 .contactForm .formFont {
-  color: #ff9100;
+  color: hsl(34, 100%, 50%);
 }
-
 .contactForm .formBox {
-  background: #1e0467;
-  color: #ff3c00;
+  background: hsl(256, 93%, 21%);
+  color: hsl(14, 100%, 50%);
   margin: 5px;
   width: 20vw;
 }
 
 .socialsMenu {
   position: fixed;
-  border-top: #ff3c00 1px solid;
-  border-right: #ff3c00 1px solid;
-  border-bottom: #ff3c00 1px solid;
+  border-top: hsl(14, 100%, 50%) 1px solid;
+  border-right: hsl(14, 100%, 50%) 1px solid;
+  border-bottom: hsl(14, 100%, 50%) 1px solid;
   border-radius: 0px 10px 10px 0px;
   width: 75px;
   top: 40vh;
   left: 0;
 }
-
 .socialsMenu .socialLink {
   width: 50px;
   height: 50px;
@@ -409,32 +345,30 @@ body {
     display: none;
   }
 }
-
 @media screen and (max-width: 1780px) {
   .about-me {
     min-height: 70vh;
   }
 }
-
 @media screen and (max-width: 800px) {
   body {
     overflow-x: auto;
   }
   .title {
-    -webkit-text-fill-color: #1e0467;
+    -webkit-text-fill-color: hsl(256, 93%, 21%);
   }
   .title-title {
     width: 100%;
     font-size: 4rem !important;
-    color: #1e0467;
+    color: hsl(256, 93%, 21%);
   }
   .title-title .title-subtitle {
     font-size: 0.8rem;
   }
   .about-me {
     min-height: 70vh;
-    color: #1e0467;
-    -webkit-text-fill-color: #ff9100;
+    color: hsl(256, 93%, 21%);
+    -webkit-text-fill-color: hsl(34, 100%, 50%);
   }
   .about-me .about-para {
     width: 85%;
@@ -448,19 +382,10 @@ body {
     width: 50px;
   }
   .projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     min-height: 100vh;
     max-width: 100vw;
@@ -472,16 +397,13 @@ body {
     display: none;
   }
   .projects .projectAbout {
-    -webkit-transform: translate(10%, 0%);
-            transform: translate(10%, 0%);
+    transform: translate(10%, 0%);
     width: 80%;
     font-size: 0.8rem;
   }
   .from-left,
   .from-right {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
-    -webkit-transition: none;
+    transform: translate(0%);
     transition: none;
     margin-right: 0px;
     margin-left: 0px;
@@ -501,7 +423,6 @@ body {
     max-width: 25px;
   }
 }
-
 @media screen and (max-width: 380px) {
   body {
     overflow-x: none;
@@ -527,26 +448,15 @@ body {
     width: 50px;
   }
   .projects {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
     min-height: 100vh;
     max-width: 100vw;
   }
   .projects .projectContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .projects .projectContainer .project-title {
@@ -556,17 +466,12 @@ body {
     display: none;
   }
   .projects .projectContainer .projectHeader {
-    font-size: 2.0rem;
+    font-size: 2rem;
   }
   .projects .projectContainer .projectAbout {
-    -webkit-transform: translate(15%, 0%);
-            transform: translate(15%, 0%);
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    transform: translate(15%, 0%);
+    justify-content: center;
+    align-self: center;
   }
   .projects .projectContainer .projectAbout p {
     width: 90%;
@@ -574,33 +479,25 @@ body {
   }
   .from-left,
   .from-right {
-    -webkit-transform: translate(0%);
-            transform: translate(0%);
-    -webkit-transition: none;
+    transform: translate(0%);
     transition: none;
     margin-right: 0px;
     margin-left: 0px;
   }
   .contact-title {
-    font-size: 3.0rem;
+    font-size: 3rem;
   }
   .contactForm {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: column;
-        flex-wrap: column;
+    flex-direction: column;
+    flex-wrap: column;
   }
   .contactForm .formFont {
-    color: #ff9100;
+    color: hsl(34, 100%, 50%);
   }
   .contactForm .formBox {
-    background: #1e0467;
-    color: #ff3c00;
+    background: hsl(256, 93%, 21%);
+    color: hsl(14, 100%, 50%);
     margin: 5px;
     width: 50vw;
   }
@@ -612,5 +509,4 @@ body {
     max-height: 20px;
     max-width: 20px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

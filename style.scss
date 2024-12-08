@@ -193,6 +193,13 @@ body {
                     background: rgb(0, 0, 0);
                     .projectHeader {
                         font-size: 200%;
+                        margin-block-start: 20px;
+                        margin-block-end: auto;
+                    }
+                    .projectSubheader {
+                        margin-block-start: 1px;
+                        margin-block-end: 10px;
+                        color: red;
                     }
                     .projectAbout {
                         transform: translate(5%, 0%);
@@ -280,6 +287,51 @@ body {
         0 0 0.5em $brightOrangeColor, 
         0 0 0.1em $brightOrangeColor, 
         0 10px 3px #000;
+    }
+}
+
+.previewButton {
+    color: $darkPurple;
+    cursor: pointer;
+    background: $orangeColor;
+    height: $buttonHeight;
+    width: $buttonWidth;
+    border: 1px;
+    margin-left: 3px;
+    border-radius: 7px;
+    box-shadow: 0 -40px 100px, 
+    0 0 3px, 
+    0 0 2em $orangeColor, 
+    0 0 0.5em $orangeColor, 
+    0 0 0.1em $orangeColor, 
+    0 10px 3px #000;
+    &:hover {
+        background: $brightOrangeColor;
+        box-shadow: 0 -40px 100px, 
+        0 0 3px, 
+        0 0 2em $brightOrangeColor, 
+        0 0 0.5em $brightOrangeColor, 
+        0 0 0.1em $brightOrangeColor, 
+        0 10px 3px #000;
+    }
+}
+
+#previewContainer {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+    #previewImage {
+        transform: translate(10%, 10%);
+        width: 80vw;
+        height: 80vh;
+        border: 2px solid white; 
+        border-radius: 10px;
     }
 }
 
